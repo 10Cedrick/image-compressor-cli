@@ -27,7 +27,7 @@ Assurez-vous d'avoir Node.js installé sur votre machine avant d'exécuter ce sc
 
 Exécutez le script en spécifiant le chemin de l'image que vous souhaitez compresser :
 ```sh
-node compress.js chemin/vers/votre/image.jpg
+node index.js chemin/vers/votre/image.jpg
 ```
 
 Assurez-vous de remplacer `compress.js` par le nom de votre fichier si nécessaire.
