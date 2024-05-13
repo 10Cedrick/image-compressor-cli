@@ -30,8 +30,6 @@ Exécutez le script en spécifiant le chemin de l'image que vous souhaitez compr
 node index.js chemin/vers/votre/image.jpg
 ```
 
-Assurez-vous de remplacer `compress.js` par le nom de votre fichier si nécessaire.
-
 Le script compressera l'image avec une qualité prédéfinie et produira une version compressée au format WebP.
 
 ## Personnalisation de la Qualité de Compression
