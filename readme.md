@@ -1,50 +1,46 @@
-# Script de Compression d'Image avec Sharp
+Image Compression Script with Sharp
 
-Ce script Node.js utilise la bibliothèque Sharp pour compresser des images au format WebP. Il prend en entrée le chemin d'une image à compresser et produit une version compressée de cette image au format WebP.
+This Node.js script uses the Sharp library to compress images to WebP format. It takes the path of an image to compress as input and produces a compressed version of that image in WebP format.
+Prerequisites
 
-## Prérequis
+Make sure you have Node.js installed on your machine before running this script. You can download it from nodejs.org.
+Installation
 
-Assurez-vous d'avoir Node.js installé sur votre machine avant d'exécuter ce script. Vous pouvez le télécharger depuis [nodejs.org](https://nodejs.org/).
+    Clone this repository on your machine:
 
-## Installation
+    sh
 
-1. Clonez ce dépôt sur votre machine :
-   ```sh
-   git clone https://github.com/votre-utilisateur/nom-du-depot.git
-   ```
+git clone https://github.com/your-username/repository-name.git
 
-2. Accédez au répertoire du projet :
-   ```sh
-   cd nom-du-depot
-   ```
+Navigate to the project directory:
 
-3. Installez les dépendances nécessaires :
-   ```sh
-   npm install
-   ```
+sh
 
-## Utilisation
+cd repository-name
 
-Exécutez le script en spécifiant le chemin de l'image que vous souhaitez compresser :
-```sh
-node index.js chemin/vers/votre/image.jpg
-```
+Install the necessary dependencies:
 
-Le script compressera l'image avec une qualité prédéfinie et produira une version compressée au format WebP.
+sh
 
-## Personnalisation de la Qualité de Compression
+    npm install
 
-Vous pouvez ajuster la qualité de compression en modifiant la variable `quality` dans le script. La qualité est définie sur une échelle de 0 à 100, où 0 est la qualité la plus basse et 100 est la meilleure qualité.
+Usage
 
-```javascript
-const quality = 80; // Ajustez la qualité selon vos besoins (entre 0 et 100)
-```
+Run the script by specifying the path to the image you want to compress:
 
-## Notes
+sh
 
-- Assurez-vous d'avoir les droits nécessaires pour écrire dans le répertoire où se trouve l'image à compresser, afin de pouvoir créer l'image compressée.
-- Le script générera une image compressée au format WebP avec le nom `compressed_image.webp` dans le même répertoire que l'image originale.
+node index.js path/to/your/image.jpg
 
----
+The script will compress the image with a predefined quality and produce a compressed version in WebP format.
+Customizing Compression Quality
 
-Vous pouvez personnaliser ce `README.md` en ajoutant des informations supplémentaires sur le script ou en fournissant des exemples d'utilisation avancée si nécessaire. Si vous avez d'autres questions ou besoin d'aide pour quelque chose de spécifique, n'hésitez pas à demander !
+You can adjust the compression quality by modifying the quality variable in the script. Quality is defined on a scale of 0 to 100, where 0 is the lowest quality and 100 is the best quality.
+
+javascript
+
+const quality = 80; // Adjust quality as needed (between 0 and 100)
+
+Notes
+
+    Ensure you have the necessary permissions to write to the directory where the image to be compressed is located, in order to create the compressed image.
